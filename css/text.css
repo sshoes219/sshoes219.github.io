@@ -1,0 +1,8 @@
+@charset "utf-8";
+.text {
+}
+#text-wrap {
+	float: left;
+	height: inherit;
+	background: 550x450;
+}
