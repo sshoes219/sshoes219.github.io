@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<style type="text/css">
+#contenedor {
+	float: none;
+	height: 1000px;
+	margin: auto;
+	width: 1340px;
+}
+#encabezado {
+	height: 200px;
+	width: 1340px;
+}
+#pie {
+	height: 70px;
+	width: 1340px;
+}
+#navegador {
+	height: 60px;
+	width: 1340px;
+}
+#cuerpo {
+	height: 670px;
+	width: 1340px;
+}
+</style>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/encabezado2.jpg')">
+<div id="contenedor">
+  <div id="encabezado"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','imagenes/encabezado2.jpg',1)"><img src="imagenes/encabezado1.jpg" alt="" width="1340" height="200" id="Image1"></a></div>  <div id="navegador"><img src="imagenes/navegador.jpg" alt="" width="1340" height="60" usemap="#menuMap" id="menu"/>
+    <map name="menuMap">
+      <area shape="rect" coords="14,11,65,45" href="index.html" target="_top">
+      <area shape="rect" coords="200,7,284,52" href="musica.html" target="_top">
+      <area shape="rect" coords="413,4,487,55" href="videos.html" target="_top">
+      <area shape="rect" coords="617,7,690,57" href="fotos.html">
+      <area shape="rect" coords="1032,14,1065,48" href="https://www.facebook.com/linkinparkoficial" target="_blank" alt="Facebook">
+      <area shape="rect" coords="1132,13,1166,47" href="https://www.instagram.com/linkinpark/" target="_blank">
+      <area shape="rect" coords="1183,15,1217,48" href="https://www.youtube.com/user/linkinpark" target="_blank">
+      <area shape="rect" coords="1228,14,1269,48" href="https://soundcloud.com/linkinpark" target="_blank">
+      <area shape="rect" coords="1285,17,1317,47" href="https://open.spotify.com/artist/6XyY86QOPPrYVGvF9ch6wz
+" target="_blank">
+      <area shape="rect" coords="1083,14,1115,49" href="https://twitter.com/linkinpark" target="_blank" alt="twitter">
+    </map>
+  </div><div id="cuerpo"><img src="imagenes/musica.jpg" width="1340" height="670" alt=""/></div>
+  <div id="pie"><img src="imagenes/pie.jpg" width="1340" height="70" alt=""/></div>
+  </div> 
+   
+</div>
+</body>
+</html>
